@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Wears Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Fashion Wears Survey</h1>
+    <p id="description"><em>Kindly fill out this survey to help us improve our products and services.</em></p>
+  </header>
+  <main>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Name:
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </label>
+      
+      <label for="email" id="email-label">
+        Email:
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </label>
+      
+      <label for="number" id="number-label">
+        Age:
+        <input type="number" id="number" min="18" max="75" placeholder="Input your age (years)">
+      </label>
+  
+      <label for="dropdown">
+        How did you hear about us?
+        <select name="sex" id="dropdown" required>
+          <option value="">(Select one)</option>
+          <option value="1">A friend</option>
+          <option value="2">Google</option>
+          <option value="3">Instagram</option>
+          <option value="4">Facebook</option>
+          <option value="5">X</option>
+          <option value="6">Other</option>
+        </select>
+      </label>
+  
+      <fieldset>
+        <legend>
+          How would you rate our products and services?
+        </legend>
+        <label for="very-good">
+          <input type="radio" id="very-good" name="rating" checked value="very-good"> very good
+        </label>
+        <label for="good">
+          <input type="radio" id="good" name="rating" value="good"> good
+        </label>
+        <label for="poor">
+          <input type="radio" id="poor" name="rating" value="poor"> poor
+        </label>
+      </fieldset>
+  
+      <fieldset>
+        <legend>
+          Will you recommend us to others? 
+        </legend>
+        <label for="check-yes"> 
+          <input type="checkbox" value="Yes" id="check-yes" name="recommend" checked>
+          Yes
+        </label>
+        <label for="check-no">
+          <input type="checkbox" value="No" id="check-no" name="recommend">
+          No
+        </label>
+        <label for="check-maybe">
+          <input type="checkbox" value="Maybe" id="check-maybe" name="recommend">
+          Maybe
+        </label>
+      </fieldset>
+  
+      <label for="customer-feedback">
+        Tell us how we can improve our products and services in the box below (Optional):
+        <textarea name="" id="customer-feedback" cols="30" rows="3" maxlength="200" placeholder="Type here"></textarea>
+      </label>
+  
+      <label for="submit">
+        <input type="submit" value="Submit" id="submit">
+      </label>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      <em>Thank you for choosing us...</em>
+    </p>
+  </footer>
+</body>
+</html>
